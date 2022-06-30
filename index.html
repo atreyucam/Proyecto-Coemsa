@@ -1,16 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coemsa.com</title>
-</head>
-<body>
-    <h1>Conexion repositorio</h1>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/productsStyle.css">
+    <link rel="stylesheet" href="/css/locationStyle.css">
+    <link rel="stylesheet" href="/css/asesoria.css">
 
-    <footer>
-        <p>Erika</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header id="header">
+      <nav id="header_navbar">
+        <div class="header_navbar--logo">
+          <a href="/index.html"><span>logo</span></a>
+        </div>
+
+        <!-- <div>
+
+        </div> -->
+
+        <div class="header_navbar--optionsList inactive">
+          <a href="/products.html" class="inactive">Productos</a>
+          <a href="/location.html" class="inactive">Ubicación</a>
+          <a href="/asesoria.html" class="inactive">Asesoria</a>
+        </div>
+
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <picture class="pop-up--window">
+        <span class="pop-up--close">X</span>
+        <img src="/img/ventana emergentepng.png" alt="">
+      </picture>
+
+      <section class="main_slider">
+        <ul>
+          <li>
+            <img src="/img/estructurasMetalicas.jpg" alt="">
+          </li>
+          
+          <li>
+            <img src="/img/gypsum.jpg" alt="">
+          </li>
+          
+          <li>
+            <img src="/img/teja.jpg" alt="">
+          </li>
+          
+          <li>
+            <img src="/img/estructurasMetalicas.jpg" alt="">
+          </li>
+        </ul>
+      
+      </section>
+
+      <section class="main_trending">
+        <article class="main_trending--video">
+          <video src="./video/video-home.mp4" controls></video>
+        </article>
+
+        <article class="trending-pictures--container">
+          <h2>Encuentra todo para tu construcción</h2>
+
+          <div class="main_trending--pictures">
+            <img src="/img/teja.jpg" alt="">
+            <img src="/img/gypsum.jpg" alt="">
+            <img src="/img/estructurasMetalicas.jpg" alt="">
+          </div>
+        </article>
+      </section>
+
+    <footer id="footer">
+      <span class="footer--logo">logo 50px</span>
+      
+      <div class="footer_information">
+        <div class="footer_information--left">
+          <p>coemsa.com | © 2022 coemsa  Ambato - Ecuador</p>
+        </div>
+
+        <div class="footer_information--right">
+          <a href="">
+            <span class="footer_socialMedia--facebook"></span>
+          </a>
+
+          <a href="">
+            <span class="footer_socialMedia--instagram"></span>
+          </a>
+
+          <a href="">
+            <span class="footer_socialMedia--whatsaap"></span>
+          </a>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <script src="/src/nodes.js"></script>
+    <script src="/src/main.js"></script>
+  </body>
 </html>
