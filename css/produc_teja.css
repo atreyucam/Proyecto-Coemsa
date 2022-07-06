@@ -1,0 +1,97 @@
+:root{
+    /*colors*/
+    --color-logo: #e63946;
+    --color-footer: #1d3557;
+    --secondary-text: gray;
+    --light-grey: #80808021;
+
+    /*font-size*/
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 2rem;
+}
+
+
+main .main_teja--eternit h1{
+    color: white;;
+    font-size: var(--lg);
+    margin: 20px;
+    font-weight: 700;
+}
+main .main_teja--eternit .teja_eternit--container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .main_eternit--header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0px;
+    align-items: center;
+    background-color: var(--color-logo);
+    
+}
+
+main .main_eternit--header span{
+    width: 80px;
+    height: 80px;
+    margin: 0px 20px;
+}
+
+main .icon_teja--years{
+    background-image: url('/img/products_teja/icon\ Years.png');
+}
+
+main .icon_teja--asbesto{
+    background-image: url('/img/products_teja/lib.png');
+}
+
+main .teja_eternit--container article{
+    width: 380px;
+    height: 380px;
+    margin: 20px;
+}
+
+article img{
+    width: 100%;
+    height: 100%;
+}
+
+
+main .teja_eternit--container article h2{
+    font-size: var(--md);
+    color: var(--color-footer);
+}
+
+
+@media(max-width: 432px){
+    .main_eternit--header{
+        display: grid !important;
+        justify-content: center;
+        grid-template-areas: 'title title' 'years free' !important;
+    }
+    .main_eternit--header a{
+        grid-area: title !important;
+        justify-self: center;
+    }
+
+    .main_eternit--header .icon_teja--years{
+        grid-area: years !important;
+    }
+    .main_eternit--header .icon_teja--asbesto{
+        grid-area: free !important;
+    }
+}
+
+@media(min-width: 600px){
+    main .teja_eternit--container article{
+        transition: transform 0.5s;
+        background-color: white;
+    }
+
+    main .teja_eternit--container article:hover{
+        transform: scale(1.5);
+    }
+}

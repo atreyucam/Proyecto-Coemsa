@@ -18,6 +18,7 @@ body{
 :root{
     /*colors*/
     --color-logo: #e63946;
+    --color-logo-blue: #072271;
     --color-footer: #1d3557;
     --secondary-text: gray;
 
@@ -45,8 +46,8 @@ body{
 
 header{
     width: 100%;
-    background-color: var(--color-logo);
-    height: 50px;
+    background-color: var(--color-logo-blue);
+    height: 80px;
 }
 
 header #header_navbar{
@@ -62,6 +63,12 @@ header #header_navbar .header_navbar--logo{
     grid-area: logo;
 }
 
+header #header_navbar .header_navbar--logo  span{
+    background-image: url('/img/logo-coemsa.png');
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+}
 
 header #header_navbar .header_navbar--optionsList{
     grid-area: optionList;
