@@ -18,26 +18,42 @@ main .main_teja--eternit h1{
     margin: 20px;
     font-weight: 700;
 }
-main .main_teja--eternit .teja_eternit--container{
+main .main_teja--eternit .teja_eternit--container, .teja_ajover--container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 main .main_eternit--header{
+    background-color: var(--color-logo);
+}
+
+main .main_teja--ajoverContainer{
+    background-color: var(--color-footer);
+}
+
+main .main_teja--ajoverContainer a{
+    color: white;
+}
+main .main_eternit--header, .main_teja--ajoverContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 50px 0px;
-    align-items: center;
-    background-color: var(--color-logo);
-    
+    align-items: center;  
 }
 
-main .main_eternit--header span{
-    width: 80px;
-    height: 80px;
+
+main .main_teja--ajover h1{
+    margin: 50px 20px 20px 20px;
+}
+
+main .main_eternit--header span, .main_teja--ajover span{
+    width: 120px;
+    height: 120px;
     margin: 0px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 main .icon_teja--years{
@@ -48,7 +64,7 @@ main .icon_teja--asbesto{
     background-image: url('/img/products_teja/lib.png');
 }
 
-main .teja_eternit--container article{
+main .teja_eternit--container article, .teja_ajover--container article{
     width: 380px;
     height: 380px;
     margin: 20px;
@@ -59,12 +75,21 @@ article img{
     height: 100%;
 }
 
+.icon1_ajover{
+    background-image: url('/img/products_teja/icon1Ajover.png');
+}
+.icon2_ajover{
+    background-image: url('/img/products_teja/icon2Ajover.png');
+}
+.icon3_ajover{
+    background-image: url('/img/products_teja/logoAjover.png');
+}
 
-main .teja_eternit--container article h2{
+main .teja_eternit--container article h2, .teja_ajover--container article h2{
     font-size: var(--md);
     color: var(--color-footer);
 }
-
+ 
 
 @media(max-width: 432px){
     .main_eternit--header{
@@ -83,15 +108,23 @@ main .teja_eternit--container article h2{
     .main_eternit--header .icon_teja--asbesto{
         grid-area: free !important;
     }
+
+    .main_teja--ajoverContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 120px 120px;
+        margin-bottom: 50px;
+    }
 }
 
 @media(min-width: 600px){
-    main .teja_eternit--container article{
+    main .teja_eternit--container article, .teja_ajover--container article{
         transition: transform 0.5s;
         background-color: white;
     }
 
-    main .teja_eternit--container article:hover{
+    main .teja_eternit--container article:hover, .teja_ajover--container article:hover{
         transform: scale(1.5);
     }
 }
+
