@@ -1,0 +1,49 @@
+:root{
+    /*colors*/
+    --color-logo: #e63946;
+    --color-footer: #1d3557;
+    --secondary-text: gray;
+    --light-grey: #80808021;
+
+    /*font-size*/
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 2rem;
+}
+
+.main_gypsum--container{
+    margin: 30px 0px;
+}
+
+.main_gypsum--container h2{
+    font-size: var(--lg);
+    margin: 20px 0px 0px 20px;
+}
+
+.main_gypsum--container img{
+    width: 280px;
+    margin: 20px
+
+}
+
+@media(min-width: 600px){
+    main{
+        display: grid;
+        justify-content: center;
+    }
+
+    main .main_gypsum--container{
+        transition: transform 0.5s;
+        background-color: white;
+    }
+
+    main .main_gypsum--container:hover{
+        transform: scale(1.5);
+    }
+
+    .main_gypsum--container img{
+        width: 500px;
+        margin: 20px
+    
+    }
+}
