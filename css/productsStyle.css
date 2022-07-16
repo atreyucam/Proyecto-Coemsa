@@ -60,14 +60,23 @@ main .products-list article a{
     color: blue;
 }
 
-@media(max-width: 600px){
-    .products-list{
-        width: 70%;
-    }
+main .main_products--video {
+    display: grid;
+    justify-content: center;
+}
+
+main .main_products--video video{
+    width: 300px ;
+    height: min-content;
+    padding: 20px;
 }
 
 
 @media(max-width: 600px){
+    .products-list{
+        width: 70%;
+    }
+
     footer .footer_information{
         display: flex;
         place-content: center;
@@ -83,3 +92,4 @@ main .products-list article a{
         display: none;
     }
 }
+
