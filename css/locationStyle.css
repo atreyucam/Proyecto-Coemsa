@@ -10,6 +10,13 @@
     --lg: 1.8rem;
 }
 
+main .main_location--headerImg{
+    display: grid;
+    gap: 30px;
+    margin: 20px
+
+}
+
 
 main .main_location--information{
     display: grid;
@@ -58,12 +65,20 @@ main .main_location--information p{
 
 @media(min-width:1024px){
     main .main_location--headerImg{
-        align-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)) !important; 
+        grid-template-columns: 600px 1fr !important;
+        grid-template-rows: 600px;
+    }
+
+    main{
+        max-width: 1300px;
+
     }
 
     img{
-        height: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        max-width: 600px;
     }
 
 }

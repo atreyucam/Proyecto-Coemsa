@@ -130,19 +130,20 @@ main .main_trending--video video{
 }
 
 main .main_trending--pictures{
+  overflow: auto;
+  width: auto;
   display: flex;
-  overflow-x: scroll;
+  justify-content: center;
 
 }
 main .main_trending--pictures span{
-  min-width: 300px;
-  max-width: 500px;
-  min-height: 300px;
-  max-height: 500px;
   display: inline-block;
   margin:20px;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 300px;
+  min-height: 300px;
 }
 
 main .trending_img1{
